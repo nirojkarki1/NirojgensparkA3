@@ -5,24 +5,26 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
-      <bean id="student" class="org.example.student">
-          <property name="id" value="1234"/>
-          <property name="name" value="Niroj"/>
-          <property name="add" ref="Address"/>
-          <property name="ph">
-              <list>
-                  <ref bean="phone1"/>
-                  <ref bean="phone2"/>
-              </list>
-          </property>
+    <context:component-scan base-package="org.example"/>
 
-      </bean>
-      <bean id="Address" class="org.example.Address">
-           <property name="city" value="Dallas"/>
-           <property name="state" value="texas"/>
-           <property name="country" value="USA"/>
-           <property name="zipcode" value="75555"/>
-      </bean>
+<!--      <bean id="student" class="org.example.student">-->
+<!--          <property name="id" value="1234"/>-->
+<!--          <property name="name" value="Niroj"/>-->
+<!--          <property name="add" ref="Address"/>-->
+<!--          <property name="ph">-->
+<!--              <list>-->
+<!--                  <ref bean="phone1"/>-->
+<!--                  <ref bean="phone2"/>-->
+<!--              </list>-->
+<!--          </property>-->
+
+<!--      </bean>-->
+<!--      <bean id="Address" class="org.example.Address">-->
+<!--           <property name="city" value="Dallas"/>-->
+<!--           <property name="state" value="texas"/>-->
+<!--           <property name="country" value="USA"/>-->
+<!--           <property name="zipcode" value="75555"/>-->
+<!--      </bean>-->
       <bean id="phone1" class="org.example.phone">
           <property name="mob" value="7776665432"/>
       </bean>

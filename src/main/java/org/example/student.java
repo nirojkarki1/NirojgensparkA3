@@ -1,11 +1,19 @@
 package org.example;
 
-import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+import java.util.List;
+@Component
 public class student {
+    @Value("123")
     private int id;
+    @Value("Niroj")
     private String name;
+    @Autowired
     private List<phone> ph;
+    @Autowired
     private Address add;
 
 
