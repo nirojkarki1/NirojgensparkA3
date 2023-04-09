@@ -5,32 +5,32 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
-    <context:component-scan base-package="org.example"/>
+<!--    <context:component-scan base-package="org.example"/>-->
 
-<!--      <bean id="student" class="org.example.student">-->
-<!--          <property name="id" value="1234"/>-->
-<!--          <property name="name" value="Niroj"/>-->
-<!--          <property name="add" ref="Address"/>-->
-<!--          <property name="ph">-->
-<!--              <list>-->
-<!--                  <ref bean="phone1"/>-->
-<!--                  <ref bean="phone2"/>-->
-<!--              </list>-->
-<!--          </property>-->
+<!--&lt;!&ndash;      <bean id="student" class="org.example.student">&ndash;&gt;-->
+<!--&lt;!&ndash;          <property name="id" value="1234"/>&ndash;&gt;-->
+<!--&lt;!&ndash;          <property name="name" value="Niroj"/>&ndash;&gt;-->
+<!--&lt;!&ndash;          <property name="add" ref="Address"/>&ndash;&gt;-->
+<!--&lt;!&ndash;          <property name="ph">&ndash;&gt;-->
+<!--&lt;!&ndash;              <list>&ndash;&gt;-->
+<!--&lt;!&ndash;                  <ref bean="phone1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                  <ref bean="phone2"/>&ndash;&gt;-->
+<!--&lt;!&ndash;              </list>&ndash;&gt;-->
+<!--&lt;!&ndash;          </property>&ndash;&gt;-->
 
+<!--&lt;!&ndash;      </bean>&ndash;&gt;-->
+<!--&lt;!&ndash;      <bean id="Address" class="org.example.Address">&ndash;&gt;-->
+<!--&lt;!&ndash;           <property name="city" value="Dallas"/>&ndash;&gt;-->
+<!--&lt;!&ndash;           <property name="state" value="texas"/>&ndash;&gt;-->
+<!--&lt;!&ndash;           <property name="country" value="USA"/>&ndash;&gt;-->
+<!--&lt;!&ndash;           <property name="zipcode" value="75555"/>&ndash;&gt;-->
+<!--&lt;!&ndash;      </bean>&ndash;&gt;-->
+<!--      <bean id="phone1" class="org.example.phone">-->
+<!--          <property name="mob" value="7776665432"/>-->
 <!--      </bean>-->
-<!--      <bean id="Address" class="org.example.Address">-->
-<!--           <property name="city" value="Dallas"/>-->
-<!--           <property name="state" value="texas"/>-->
-<!--           <property name="country" value="USA"/>-->
-<!--           <property name="zipcode" value="75555"/>-->
-<!--      </bean>-->
-      <bean id="phone1" class="org.example.phone">
-          <property name="mob" value="7776665432"/>
-      </bean>
-    <bean id="phone2" class="org.example.phone">
-        <property name="mob" value="7476665482"/>
-    </bean>
+<!--    <bean id="phone2" class="org.example.phone">-->
+<!--        <property name="mob" value="7476665482"/>-->
+<!--    </bean>-->
 
 
 </beans>

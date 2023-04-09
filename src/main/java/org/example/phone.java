@@ -1,6 +1,11 @@
 package org.example;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class phone {
+    @Value("9076665432")
     private String mob;
 
     public String getMob() {
